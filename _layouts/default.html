@@ -8,21 +8,10 @@
 <body>
   <header>
 <h1>Photography Club</h1>
-    <nav>
-<ul>
-  <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-  <li><a href="{{site.baseurl}}/gallery.html">Gallery</a></li>
-
-</ul>
-    </nav>
+    {% include nav.html%}
   </header>
   {{content}}
-  <footer><nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-
-</ul>
-  </nav></footer>
+  <footer>{% include nav.html%}
+  ©Photography Club 2017</footer>
 </body>
 </html>
