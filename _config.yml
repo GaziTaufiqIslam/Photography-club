@@ -1,2 +1,5 @@
 baseurl: /Photography-club
 exclude: ['README.md', 'LICENSE']
+
+sass:
+  sass_dir: css

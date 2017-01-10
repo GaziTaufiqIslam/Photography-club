@@ -1,0 +1,47 @@
+nav
+  +position(relative)
+  width: 100%
+  height: 80px
+
+  font:
+    size: 18px
+    weight: 600
+  ul
+    margin: 31px 0px 31px 0px
+    float: right
+    list-style-type: none
+    line-height: 1
+    li
+      display: inline-block
+      margin-right: 20px
+      a
+        text-decoration: none
+    p
+      display: none
+.logo
+  +size(50px)
+  float: left
+  +position(absolute, 15px null null 15px)
+  path
+    fill: rgba(0,0,0,0.5)
+.navtop
+  +position(fixed)
+  background: transparentize($accent, 0.5)
+  transform: translateY(-100%)
+  +transition
+  &.show
+    transform: translateY(0%)
+
+.navbottom
+  background: transparentize($accent, 0.3)
+  height: 100px
+  bottom: 0px
+  ul
+    float: left
+    margin:
+      left: 50px
+      top: 31px
+      bottom: 0px
+    p
+      margin-top: 10px
+      display: block

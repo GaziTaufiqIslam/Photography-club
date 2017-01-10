@@ -1,7 +1,11 @@
-<nav>
+<nav class="{{include.navclass}}">
+  <div class="logo">
+    {% include icons/logo.html %}
+  </div>
 <ul>
-<li><a href="{{site.baseurl}}/">Home</a></li>
-<li><a href="{{site.baseurl}}/gallery.html">Gallery</a></li>
-
+      {%for item in site.data.settings.menu %}
+<li><a href="{{site.baseurl}}{{item.url}}">{{item.name}}</a></li>
+{% endfor%}
+  <p>©Photography Club 2017</p>
 </ul>
 </nav>

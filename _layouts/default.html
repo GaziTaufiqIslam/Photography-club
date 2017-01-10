@@ -4,14 +4,21 @@
   <title>Photography Club</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 </head>
-<body>
+<body style="background-image: url({{site.baseurl}}/img/bg.jpg);">
   <header>
-<h1>Photography Club</h1>
-    {% include nav.html%}
+
+    {% include nav.html navclass='navtop' %}
   </header>
+
   {{content}}
-  <footer>{% include nav.html%}
-  ©Photography Club 2017</footer>
+<div style="height: 1000px">
+
+</div>
+  <footer>{% include nav.html navclass='navbottom' %}
+</footer>
+  <script src="{{site.baseurl}}/js/jquery-2.1.1.min.js"></script>
+  <script src="{{site.baseurl}}/js/functions.js" type="text/javascript"></script>
 </body>
 </html>

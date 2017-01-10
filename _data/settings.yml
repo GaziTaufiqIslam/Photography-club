@@ -1,0 +1,12 @@
+# General Site settings
+title: Photography Club
+description: Uem's own photgraphy club managed by its skillful students
+email: uemphotographyclub@gmail.com
+
+#The navigation menu content
+menu:
+  - {name: Home, url: 'index.html'}
+  - {name: Gallery, url: 'gallery.html'}
+  - {name: Blogs, url: 'blogs.html'}
+  - {name: About us, url: 'index.html/#about'}
+  - {name: Contact, url: 'index.html/#contact'}
