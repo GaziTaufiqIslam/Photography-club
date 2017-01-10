@@ -1,0 +1,20 @@
+<section class="alt-section">
+<h3>Gallery</h3>
+<div class="thumb-wrap">
+
+  <div class="thumb-container">
+    {% for thumbs in site.data.settings.thumbnails%}
+
+    <div class="thumb-unit">
+
+    <img src="{{site.baseurl}}/{{thumbs.url}}" alt="">
+      <div class="thumb-overlay">
+
+        <strong>{{thumbs.name}}</strong>
+
+    </div>
+    </div>
+{% endfor %}
+  </div>
+</div>
+</section>
