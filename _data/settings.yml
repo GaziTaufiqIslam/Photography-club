@@ -12,11 +12,46 @@ menu:
   - {name: Contact, url: 'index.html/#contact'}
 
 
-#gallery thumbnails:
+#ghome-allery thumbnails:
 thumbnails:
-  - {name: bridge, folder: 'Proj1', url: '.jpg'}
-  - {name: bulbs, folder: 'Proj2', url: 'thumb2.jpg'}
-  - {name: cab, folder: 'Proj3', url: 'thumb3.jpg'}
-  - {name: shadow, folder: 'Proj4', url: 'thumb4.jpg'}
-  - {name: bunny, folder: 'Proj5', url: 'thumb5.jpg'}
-  - {name: camera, folder: 'Proj6' ,url: 'thumb6.jpg'}
+  - {name: 'bridge', url: 'thumb1.jpg'}
+  - {name: 'bulbs', url: 'thumb2.jpg'}
+  - {name: 'cab', url: 'thumb3.jpg'}
+  - {name: 'shadow', url: 'thumb4.jpg'}
+  - {name: 'bunny', url: 'thumb5.jpg'}
+  - {name: 'camera', url: 'thumb6.jpg'}
+
+#main gallery thumbnails
+gallery-thumbnails:
+  - {name: alone}
+  - {name: animalove}
+  - {name: arora}
+  - {name: beverage}
+  - {name: books}
+  - {name: butterfly}
+  - {name: castle}
+  - {name: cycle}
+  - {name: eye}
+  - {name: father}
+  - {name: feast}
+  - {name: girl}
+  - {name: holi}
+  - {name: music}
+  - {name: shaadi}
+  - {name: orangepop}
+  - {name: rail}
+  - {name: rayban}
+  - {name: redpanda}
+  - {name: sleep}
+  - {name: tech}
+  - {name: temple}
+  - {name: urban}
+  - {name: watch}
+  - {name: waterfall}
+  - {name: woods}
+  - {name: bridge}
+  - {name: bulbs}
+  - {name: cab}
+  - {name: shadow}
+  - {name: bunny}
+  - {name: camera}
