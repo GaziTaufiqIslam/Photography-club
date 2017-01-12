@@ -14,9 +14,9 @@ menu:
 
 #gallery thumbnails:
 thumbnails:
-  - {name: Typo International, folder: 'Proj1', url: 'img/thumb1.jpg'}
-  - {name: American Apparel, folder: 'Proj2', url: 'img/thumb2.jpg'}
-  - {name: Crisp Icons, folder: 'Proj3', url: 'img/thumb3.jpg'}
-  - {name: Mobile UX/UI, folder: 'Proj4', url: 'img/thumb4.jpg'}
-  - {name: Fresh beats, folder: 'Proj5', url: 'img/thumb5.jpg'}
-  - {name: Timeline Page, folder: 'Proj6' ,url: 'img/thumb6.jpg'}
+  - {name: bridge, folder: 'Proj1', url: '.jpg'}
+  - {name: bulbs, folder: 'Proj2', url: 'thumb2.jpg'}
+  - {name: cab, folder: 'Proj3', url: 'thumb3.jpg'}
+  - {name: shadow, folder: 'Proj4', url: 'thumb4.jpg'}
+  - {name: bunny, folder: 'Proj5', url: 'thumb5.jpg'}
+  - {name: camera, folder: 'Proj6' ,url: 'thumb6.jpg'}
