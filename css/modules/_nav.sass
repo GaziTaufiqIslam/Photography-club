@@ -22,10 +22,10 @@ nav
   float: left
   +position(absolute, 15px null null 15px)
   path
-    fill: rgba(0,0,0,0.5)
+    fill: rgba(25,25,112,0.5)
 .navtop
   +position(fixed)
-  background: transparentize($accent, 0.5)
+  background: linear-gradient( transparentize($bg-color, 0.0),transparentize(white, 1.0))
   transform: translateY(-100%)
   z-index: 1
   +transition
@@ -33,13 +33,13 @@ nav
     transform: translateY(0%)
 .navgallery
   +position(fixed)
-  background: transparentize($accent, 0.5)
+  background: linear-gradient( transparentize($bg-color, 0.0),transparentize(white, 1.0))
   z-index: 1
 
 
 
 .navbottom
-  background: transparentize($primary-color, 0.7)
+  background: linear-gradient(transparentize($bg-color, 0.4),transparentize($accent-color, 0.0) 150%)
   height: 100px
   bottom: 0px
   ul
