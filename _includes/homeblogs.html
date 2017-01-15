@@ -1,20 +1,22 @@
 <section class="blog-section">
   <h3>Blogs</h3>
   <div class="blog-belt">
-
-    <div class="blog-unit" style="background-image: url({{site.baseurl}}/img/blog/newyear.jpg);">
+{% for post in site.posts %}
+    <div class="blog-unit" style="background-image: url({{site.baseurl}}/img/blog/{{post.thumbnail}});">
       <div class="author-face">
-        <img src="{{site.baseurl}}/img/blog/newyear-face.jpg" alt="">
-        <strong class="author-name">Authors name</strong>
-        <em class="author-description">Description</em>
+        <img src="{{site.baseurl}}/img/blog/{{post.face}}" alt="">
+        <strong class="author-name">{{post.author}}</strong>
+        <em class="author-description">{{post.description}}</em>
       </div>
       <div class="blog-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <a href="#">Read full article</a>
+        <h5>{{post.title}}</h5>
 
         </div>
+        <a href="{{post.url}}">Read full article</a>
+
 
       </div>
+      {% endfor %}
 
     </div>
 

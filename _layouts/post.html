@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Photography Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+  <script src="{{site.baseurl}}/js/jquery-2.1.1.min.js"></script>
+  <script src="{{site.baseurl}}/js/lightbox.min.js" type="text/javascript"></script>
+  <script src="{{site.baseurl}}/js/functions.js" type="text/javascript"></script>
+
+</head>
+<body style="height: 100vh;">
+
+<header>
+    {% include nav.html navclass='navpage' %}
+</header>
+{% include scroll-parallax.html %}
+  <div style="min-height: 64vh;">
+    {{content}}
+
+  </div>
+
+  <footer>{% include nav.html navclass='navbottom' %}
+</footer>
+</body>
+</html>
