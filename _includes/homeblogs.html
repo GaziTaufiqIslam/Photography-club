@@ -1,7 +1,7 @@
 <section class="blog-section">
   <h3>Blogs</h3>
   <div class="blog-belt">
-{% for post in site.posts %}
+    {% for post in site.posts %}
     <div class="blog-unit" style="background-image: url({{site.baseurl}}/img/blog/{{post.thumbnail}});">
       <div class="author-face">
         <img src="{{site.baseurl}}/img/blog/{{post.face}}" alt="">
@@ -10,16 +10,16 @@
       </div>
       <div class="blog-content">
         <h5>{{post.title}}</h5>
-
-        </div>
-        <a href="{{site.baseurl}}{{post.url}}">Read full article</a>
-
-
+        {{ post.excerpt }}
       </div>
-      {% endfor %}
+      <a href="{{site.baseurl}}{{post.url}}">Read full article</a>
+
 
     </div>
-
+    {% endfor %}
 
   </div>
+
+
+</div>
 </section>

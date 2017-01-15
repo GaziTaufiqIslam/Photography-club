@@ -1,3 +1,6 @@
+$(window).load( function() {
+  $('.overlay').hide();
+});
 $(window).scroll(function () {
   var wScroll= $(this).scrollTop();
   var winH = $(window).height();

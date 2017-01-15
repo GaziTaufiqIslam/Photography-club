@@ -1,5 +1,5 @@
 .blog-section
-  background: transparentize(slateblue, 0.7)
+  background: transparentize($bg-color, 0.7)
   padding:
     top: 50px
     bottom: 50px
@@ -25,7 +25,7 @@
         height: 100%
         +position(absolute, 0 0 0 0)
         width: 100%
-        background: linear-gradient(transparentize($primary-color, 0.0), transparentize($primary-color, 0.8) )
+        background: linear-gradient( transparentize($primary-color, 1.0) 20%,transparentize($primary-color, 0.0))
       +display(flex)
       .author-face
         min-width: 300px
@@ -33,6 +33,7 @@
         +position(relative)
         z-index: 1
         img
+          +size(150px)
           max-width: 150px
           border-radius: 50%
         .author-name
