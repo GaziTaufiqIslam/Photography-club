@@ -1,0 +1,62 @@
+.blog-section
+  background: transparentize(slateblue, 0.7)
+  padding:
+    top: 50px
+    bottom: 50px
+  h3
+    text-align: center
+    margin-bottom: 50px
+    text-transform: uppercase
+  .blog-belt
+    width: 100%
+    +position(relative)
+    .blog-unit
+      max-width: 750px
+      margin: 0px auto
+      padding: 30px
+      color: $accent
+      +position(relative)
+      background:
+        size: cover
+        position: center
+      &:after
+        content: ""
+        display: block
+        height: 100%
+        +position(absolute, 0 0 0 0)
+        width: 100%
+        background: linear-gradient(transparentize($primary-color, 0.0), transparentize($primary-color, 0.8) )
+      +display(flex)
+      .author-face
+        min-width: 300px
+        text-align: center
+        +position(relative)
+        z-index: 1
+        img
+          max-width: 150px
+          border-radius: 50%
+        .author-name
+          display: block
+          text-transform: uppercase
+          font:
+            weight: 600
+          letter-spacing: 1px
+      .blog-content
+        +position(relative)
+        z-index: 1
+        text-align: justify
+        +position(relative)
+        p
+          font:
+            size: 14px
+        a
+          +position(absolute)
+          right: 5px
+          bottom: 5px
+          font:
+            size: 14px
+            weight: 600
+          background: $bg-color
+          padding: 10px 20px
+          line-height: 1
+          background: $bg-color
