@@ -4,7 +4,7 @@
   </div>
 <ul>
       {%for item in site.data.settings.menu %}
-<li><a href="{{item.url}}">{{item.name}}</a></li>
+<li><a href="{{site.baseurl}}/{{item.url}}">{{item.name}}</a></li>
 {% endfor%}
   <p>©Photography Club 2017</p>
 </ul>
