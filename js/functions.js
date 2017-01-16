@@ -1,11 +1,10 @@
 $(window).load( function() {
   $('.overlay').hide();
-  blogStuff();
-
 });
 
-
-
+$( document ).ready(function(){
+  blogStuff();
+});
 
 $(window).scroll(function () {
   var wScroll= $(this).scrollTop();
