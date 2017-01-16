@@ -5,11 +5,11 @@ email: uemphotographyclub@gmail.com
 
 #The navigation menu content
 menu:
-  - {name: Home, url: 'index.html'}
-  - {name: Gallery, url: 'gallery.html'}
-  - {name: Blogs, url: 'blogs.html'}
-  - {name: About us, url: 'index.html/#about'}
-  - {name: Contact, url: 'index.html/#contact'}
+  - {name: Home, url: '#home'}
+  - {name: Gallery, url: '#gallery'}
+  - {name: Blogs, url: '#blogs'}
+  - {name: About us, url: '#about'}
+  - {name: Contact, url: '#contact'}
 
 
 #ghome-allery thumbnails:
