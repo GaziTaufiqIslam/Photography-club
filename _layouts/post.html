@@ -13,11 +13,22 @@
 <body style="height: 100vh;">
 
 <header>
-    {% include nav.html navclass='navpage' %}
+
+    <nav class="navpage">
+      <div class="logo">
+        {% include icons/logo.html %}
+      </div>
+    <ul>
+          {%for item in site.data.settings.menu %}
+    <li><a href="{{site.baseurl}}/{{item.url}}">{{item.name}}</a></li>
+    {% endfor%}
+      <p>©Photography Club 2017</p>
+    </ul>
+    </nav>
 </header>
 {% include scroll-parallax.html %}
   <div class="blog-page">
-    
+
     {{content}}
 
   </div>
