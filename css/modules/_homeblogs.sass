@@ -78,8 +78,12 @@
     +size(40px)
     cursor: pointer
     z-index: 2
-    opacity: 0.7
-
+    opacity: 0.3
+    padding: 5px
+    border-radius: 50%
+    &:hover
+      background: transparentize($bg-color, 0.7)
+      opacity: 0.8
   .blog-control-next
     +position(absolute, 50% 20px null null )
   .blog-control-prev
