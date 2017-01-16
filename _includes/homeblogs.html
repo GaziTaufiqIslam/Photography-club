@@ -1,5 +1,10 @@
 <section class="blog-section">
   <h3>Blogs</h3>
+  <div class="blog-controls">
+
+    <div class="blog-control-next">{% include icons/next.html %}</div>
+    <div class="blog-control-prev">{% include icons/prev.html %}</div>
+  </div>
   <div class="blog-belt">
     {% for post in site.posts %}
     <div class="blog-unit" style="background-image: url({{site.baseurl}}/img/blog/{{post.thumbnail}});">
