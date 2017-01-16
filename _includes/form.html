@@ -1,0 +1,18 @@
+<section id="contact">
+  <h3 style="text-align: center;">Wanna contact us?</h3>
+  <form action="//formspree.io/{{site.data.settings.email}}" method="POST">
+
+  <div class="contact-info">
+
+ <label for=""><span>Name</span><input type="text" name="name" placeholder="Type your name here"></label>
+    <label for=""><span>Email</span><input type="email" name="_replyto" placeholder="Give Your Email address"></label>
+      </div>
+    <textarea name="message" placeholder="Tell us about what you love"></textarea>
+    <input type="hidden" name="_subject" value="New submission!" />
+    <input type="hidden" name="_next" value="//{{site.github.url}}/form-success.html" />
+    <div class="submit-wrap">
+
+    <input type="submit" value="Send">
+  </div>
+</form>
+</section>

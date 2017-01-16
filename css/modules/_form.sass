@@ -1,0 +1,45 @@
+form
+  max-width: 450px
+  margin: 0 auto 50px
+
+  input, textarea
+    border: 3px solid $primary-color
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+
+    &:focus
+      outline: none
+      border-color: $accent-color
+  textarea
+    height: 10em
+    margin-bottom: 20px
+  .submit-wrap
+    text-align: right
+  [type="submit"]
+    background: $primary-color
+    color: white
+    font:
+      size: 18px
+    text-transform: uppercase
+    width: 30%
+
+    &:hover
+      background: $accent-color
+
+
+
+
+  .contact-info
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+      &:first-child
+        padding-right: 20px
+
+  label
+    display: block
+    margin-bottom: 20px
+    span
+      display: block
