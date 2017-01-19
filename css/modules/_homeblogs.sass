@@ -1,11 +1,14 @@
 .blog-section
   +position(relative)
   background: transparentize($bg-color, 0.7)
-  padding:
-    top: 50px
-    bottom: 50px
+  margin:
+    top: 100px
+    bottom: 100px
   h3
+    font-size: 18px
+    letter-spacing: 2px
     text-align: center
+    text-shadow: 0px 1px 2px $accent-color
     margin-bottom: 50px
     text-transform: uppercase
   .blog-belt
@@ -13,12 +16,12 @@
     min-height: 280px
     +position(relative)
     .blog-unit
-      max-width: 900px
-      margin: 0 0 50px -450px
+      width: 900px
+      margin: 0 0 50px
       color: $accent
       opacity: 0
       +position(absolute, 0px 0px null 50%)
-
+      +transform(translateX(-50%))
       background:
         size: cover
         position: center
@@ -50,6 +53,8 @@
             weight: 600
           letter-spacing: 1px
       .blog-content
+        max-height: 220px
+        text-shadow: 0px 0px 5px $accent-color
         padding: 30px
         +position(relative)
         z-index: 1
@@ -60,6 +65,11 @@
             size: 24px
           line-height: 1.2
           color: $accent
+          margin: 0
+        p
+          margin-bottom: 0
+        h3, em, strong
+          display: none
       a
         +position(absolute)
         right: 20px
@@ -72,6 +82,8 @@
         line-height: 1
         background: $bg-color
         z-index: 1
+        &:hover
+          box-shadow: 0px 0px 10px transparentize($accent, 0.3)
 .blog-controls
   +position(absolute, 0 0 0 0)
   >div
@@ -88,3 +100,23 @@
     +position(absolute, 50% 20px null null )
   .blog-control-prev
     +position(absolute, 50% null null 20px )
+
+@media screen and (max-width: 900px)
+  .blog-section
+    .blog-belt
+      .blog-unit
+        width: 700px
+@media screen and (max-width: 700px)
+  .blog-section
+    margin-bottom: 200px
+    .blog-belt
+      .blog-unit
+        width: 500px
+        &.active
+          display: block
+@media screen and (max-width: 470px)
+  .blog-section
+    margin-bottom: 200px
+    .blog-belt
+      .blog-unit
+        width: 360px

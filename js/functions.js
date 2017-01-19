@@ -9,6 +9,11 @@ $(window).load( function() {
 $( document ).ready(function(){
   smoothScroll(300);
   blogStuff();
+  $('.typed').typeIt({
+    speed: 300,
+    autoStart: false
+  })
+
 
 });
 

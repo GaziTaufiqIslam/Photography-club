@@ -16,13 +16,14 @@
       height: 100%
       width: 100%
       +position(absolute, 0 0 0 0)
-      background: linear-gradient( transparentize($bg-color, 0.3) 40%,transparentize($primary-color, 0.8))
+      background: linear-gradient( transparentize($primary-color, 0.8) 40%,transparentize($bg-color, 0.2))
 
     .fly-in-text
       width: 100%
       text-align: center
       list-style: none
-      color: $link-color
+      color: transparentize($accent, 0.3)
+      text-shadow: 2px 2px 2px $link-color
       position: absolute
       left: 50%
       top: 50%
