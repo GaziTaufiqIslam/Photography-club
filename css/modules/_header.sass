@@ -4,5 +4,45 @@
   +position(relative)
   z-index: -1
   .header
-    background: pink
+    background:
+      position: center
+      size: cover
+      repeat: no-repeat
     +position(absolute, -80px 0px 0px 0px)
+    overflow: hidden
+    &::before
+      content: ""
+      display: block
+      height: 100%
+      width: 100%
+      +position(absolute, 0 0 0 0)
+      background: linear-gradient( transparentize($bg-color, 0.3) 40%,transparentize($primary-color, 0.8))
+
+    .fly-in-text
+      width: 100%
+      text-align: center
+      list-style: none
+      color: $link-color
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      li
+        display: inline-block
+        text-align: center
+        margin:
+          right: 30px
+        &:last-child
+          margin-right: 0px
+        font:
+          family: open sans, arial
+          weight: 600
+          size: 3em
+        opacity: 1
+        transition: all 3000ms ease-in-out
+    .hidden
+      li
+        opacity: 0
+        @for $i from 1 through 16
+          &:nth-child(#{$i})
+            transform: translate(random(1000) - 400 + px,random(1000) - 400 + px)

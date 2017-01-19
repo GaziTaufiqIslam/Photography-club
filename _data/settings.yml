@@ -2,6 +2,7 @@
 title: Photography Club
 description: Uem's own photgraphy club managed by its skillful students
 email: photographyclub@email.com
+header-background: 'header-bg.jpg'
 
 #The navigation menu content
 menu:
@@ -55,3 +56,22 @@ gallery-thumbnails:
   - {name: shadow}
   - {name: bunny}
   - {name: camera}
+
+#header welcome
+welcome1:
+  - {letter: P}
+  - {letter: H}
+  - {letter: O}
+  - {letter: T}
+  - {letter: O}
+  - {letter: G}
+  - {letter: R}
+  - {letter: A}
+  - {letter: P}
+  - {letter: H}
+  - {letter: Y}
+welcome2:
+  - {letter: C}
+  - {letter: L}
+  - {letter: U}
+  - {letter: B}

@@ -1,15 +1,21 @@
 $(window).load( function() {
-  $('.overlay').hide();
+  $('.overlay').css({'opacity': '0'});
+  setTimeout(function() {
+    $('.overlay').css({'display': 'none'});
+  }, 600);
+  togglehidden();
 });
 
 $( document ).ready(function(){
   smoothScroll(300);
   blogStuff();
+
 });
 
 $(window).scroll(function () {
   var wScroll= $(this).scrollTop();
   var winH = $(window).height();
+  $('.fly-in-text').css({'transform':'translate(-50%,' + ((-50)+wScroll/2.5) + '%)'});
   $(".scroll-parallax").css("background-position","50% " + ( -((wScroll / 5))) + "px");
   if(wScroll > winH) {
     $('.navtop').addClass('show');
@@ -24,6 +30,12 @@ lightbox.option({
   'resizeDuration': 300,
   'wrapAround': true,
 })
+
+function togglehidden() {
+  setTimeout(function() {
+    $('.fly-in-text').removeClass('hidden');
+  }, 500);
+}
 
 function smoothScroll(duration) {
   $('a[href^="#"]').on('click', function(event){

@@ -1,4 +1,14 @@
 <div class="header-wrap">
-<div class="header">
+<div class="header" style="background-image: url({{site.baseurl}}/img/{{site.data.settings.header-background}})">
+  <ul class="fly-in-text hidden">
+{% for letter in site.data.settings.welcome1%}
+      <li>{{letter.letter}}</li>
+      {% endfor %}
+
+<br>
+  {% for letter in site.data.settings.welcome2%}
+        <li>{{letter.letter}}</li>
+        {% endfor %}
+      </ul>
 </div>
 </div>
