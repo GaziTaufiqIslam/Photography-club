@@ -1,2 +1,2 @@
 # Photography-club
-A jekyll based site for instituions photography club
+A jekyll based site for photography club template
