@@ -4,7 +4,7 @@ title: Happy Christmas to all of you
 author: Michael Winters,
 description: CEO, Photography-club
 face: author-2.jpg
-thumbnail: christmas.jpg
+thumbnail: christmas-min.jpg
 excerpt_separator: <!--more-->
 ---
 ### Happy Christmas to all of you

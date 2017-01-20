@@ -21,7 +21,7 @@ $(window).scroll(function () {
   var wScroll= $(this).scrollTop();
   var winH = $(window).height();
   $('.fly-in-text').css({'transform':'translate(-50%,' + ((-50)+wScroll/2.5) + '%)'});
-  $(".scroll-parallax").css("background-position","50% " + ( -((wScroll / 5))) + "px");
+  $(".scroll-parallax").css("background-position","50% " + ( 600 - ((wScroll / 5))) + "px");
   if(wScroll > winH) {
     $('.navtop').addClass('show');
   }

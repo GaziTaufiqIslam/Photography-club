@@ -1,7 +1,7 @@
 <h2>This is our awsome Gallery</h2>
 <div class="thumbnails">
   {% for image in site.data.settings.gallery-thumbnails%}
-  <a href="{{site.baseurl}}/img/gallery/{{image.name}}.jpg" data-lightbox="gallery" data-title = "{{image.name}}"><img src="{{site.baseurl}}/img/thumbs/{{image.name}}.jpg" alt="{{item.name}}">
+  <a href="{{site.baseurl}}/img/gallery/{{image.name}}.jpg" data-lightbox="gallery" data-title = "{{image.name}}"><img src="{{site.baseurl}}/img/thumbs/{{image.name}}-min.jpg" alt="{{item.name}}">
   </a>
   {% endfor %}
 </div>

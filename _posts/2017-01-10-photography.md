@@ -4,7 +4,7 @@ title: There's a lot behind a click
 author: Rocky Singh
 description: Chief Photographer, Photography-club
 face: 'author-3.jpg'
-thumbnail: 'photography.jpg'
+thumbnail: 'photography-min.jpg'
 excerpt_separator: <!--more-->
 ---
 ### There's a lot behind a click

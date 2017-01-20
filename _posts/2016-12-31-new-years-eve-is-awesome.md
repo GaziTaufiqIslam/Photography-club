@@ -4,7 +4,7 @@ title: New Years eve is so awesome
 author: Samuel Colorado
 description: Director of Photography, Photography-club
 face: 'newyear-face.jpg'
-thumbnail: 'newyear.jpg'
+thumbnail: 'newyear-min.jpg'
 excerpt_separator: <!--more-->
 ---
 ### New Years eve is so awesome
