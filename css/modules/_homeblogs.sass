@@ -20,7 +20,7 @@
       margin: 0 0 50px
       color: $accent
       opacity: 0
-      +position(absolute, 0px 0px null 50%)
+      +position(absolute, 0px 0px null 0)
       +transform(translateX(-50%))
       background:
         size: cover
@@ -28,6 +28,7 @@
       +transition(600ms)
       &.active
         opacity: 1
+        +position(absolute, 0px 0px null 50%)
       &:after
         content: ""
         display: block
@@ -119,4 +120,4 @@
     margin-bottom: 200px
     .blog-belt
       .blog-unit
-        width: 360px
+        width: 100%
