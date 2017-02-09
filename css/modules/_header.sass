@@ -20,6 +20,7 @@
 
     .fly-in-text
       width: 100%
+      padding-left: 0
       text-align: center
       list-style: none
       color: transparentize($accent, 0.3)
@@ -47,3 +48,19 @@
         @for $i from 1 through 16
           &:nth-child(#{$i})
             transform: translate(random(1000) - 400 + px,random(1000) - 400 + px)
+
+@media screen and (max-width: 740px)
+  .header-wrap
+    .header
+      .fly-in-text
+        li
+          font-size: 2em
+          margin:
+            right: 20px
+@media screen and (max-width: 500px)
+  .header-wrap
+    .header
+      .fly-in-text
+        li
+          font-size: 1.5em
+          margin-right: 5px
