@@ -1,0 +1,7 @@
+---
+hide_body: false
+fields:
+- type: text
+  default: Title
+- type: textarea
+  default: THis is my text.
