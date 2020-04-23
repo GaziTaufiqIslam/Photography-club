@@ -1,9 +1,10 @@
 ---
-pages:
-- _posts/2018-04-05-hi.md
+label: my-template
 hide_body: false
 fields:
 - type: text
   default: Title
 - type: textarea
   default: THis is my text.
+pages:
+- _posts/2018-04-05-hi.md
